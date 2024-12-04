@@ -10,6 +10,8 @@
     width: 150px;
     background-color: black;
   }
+
+
 </style>
 
 <script>
@@ -25,12 +27,12 @@ export default {
   },
   methods: {
     generateRandom() {
-      // 50% 확률로 A 또는 B 데이터 선택
       this.currentData = Math.random() < 0.5 ? this.cardF : this.cardR
-      if (this.currentData === this.cardR) {
 
-      }
     }
-  }
+  },
+  computed: {
+
+  },
 }
 </script>
