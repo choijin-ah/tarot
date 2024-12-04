@@ -15,12 +15,22 @@
 <script>
 
 export default {
-  name: 'CardTemplate',     // 1. 컴포넌트의 이름을 지정해요
-  props: {},
+  name: 'RandomData',
   data() {
     return {
-      CardName: "1번 카드"
+      cardF: ['카드이름', '정방향', '뜻'],
+      cardR: ['카드이름', '역방향', '뜻'],
+      currentData: []
     }
   },
+  methods: {
+    generateRandom() {
+      // 50% 확률로 A 또는 B 데이터 선택
+      this.currentData = Math.random() < 0.5 ? this.cardF : this.cardR
+      if (this.currentData === this.cardR) {
+
+      }
+    }
+  }
 }
 </script>
