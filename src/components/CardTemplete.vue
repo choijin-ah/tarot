@@ -1,14 +1,19 @@
 
 
 <template>
-  <div id="CardNum" class="card"></div>
+  <div id="CardNum" class="card" :class="{'reverse': currentData === cardR}" >
+    바보
+   </div>
 </template>
 
 <style scoped>
   #CardNum{
     height: 200px;
     width: 150px;
-    background-color: black;
+    background: linear-gradient(45deg, Violet, Orange);
+  }
+  .reverse{
+    transform: scaleY(-1);
   }
 </style>
 
@@ -23,14 +28,12 @@ export default {
       currentData: []
     }
   },
-  methods: {
-    generateRandom() {
-      // 50% 확률로 A 또는 B 데이터 선택
-      this.currentData = Math.random() < 0.5 ? this.cardF : this.cardR
-      if (this.currentData === this.cardR) {
+  created () {
+      this.currentData = Math.random() < 0.5 ? this.cardF : this.cardR;
+      console.log(this.currentData);
+      return {
 
       }
-    }
-  }
+  },
 }
 </script>
