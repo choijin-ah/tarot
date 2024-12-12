@@ -14,14 +14,15 @@
     font-size: 38px;
   }
   .reverse{
-    transform: scaleY(-1);
+    transform: scaleY(-1) scaleX(-1);
+
   }
 </style>
 
 <script>
 
 export default {
-  name: 'RandomData',
+  name: 'CardTemplate',
   data() {
     return {
       cardF: ['카드이름', '정방향', '뜻'],

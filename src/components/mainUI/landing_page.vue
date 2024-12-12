@@ -1,6 +1,6 @@
 
 <template>
-  <div @click="click()" class="landing-page">
+  <div @click="show = !show" class="landing-page">
     <div  class="start-button">
       Press Any Button
     </div>
