@@ -1,5 +1,5 @@
 <script setup>
-  import CardTemplate from './components/cards/CardTemplate.vue'
+  import cardShuffle from './components/cards_UI/card_shuffle.vue'
 
 
 </script>
@@ -7,7 +7,7 @@
 <template>
   <div class="background">
     <div id="app">
-      <CardTemplate />
+      <cardShuffle />
     </div>
     </div>
 </template>

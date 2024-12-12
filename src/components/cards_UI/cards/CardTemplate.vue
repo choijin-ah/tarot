@@ -1,13 +1,14 @@
 
 
 <template>
-  <div id="CardNum" class="card" :class="{'reverse': currentData === cardR}" >
+  <span id="CardNum" class="card" :class="{'reverse': currentData === cardR}" >
     곰
-   </div>
+   </span>
 </template>
 
 <style scoped>
   #CardNum{
+    display: inline-block;
     height: 200px;
     width: 150px;
     background: linear-gradient(45deg, Violet, Orange);
@@ -27,7 +28,8 @@ export default {
     return {
       cardF: ['카드이름', '정방향', '뜻'],
       cardR: ['카드이름', '역방향', '뜻'],
-      currentData: []
+      currentData: [],
+      index:[],
     }
   },
   created () {
