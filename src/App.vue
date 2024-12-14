@@ -1,19 +1,18 @@
 <script setup>
-  import CardTemplate from './components/CardTemplete.vue'
+  import cardShuffle from './components/cards_UI/card_shuffle.vue'
+
 
 </script>
 
 <template>
-  <div id="app">
-    <CardTemplate />
-  </div>
-
+  <div class="background">
+    <div id="app">
+      <cardShuffle />
+    </div>
+    </div>
 </template>
 
 <style scoped>
-  body{
-    margin: 0;
-  }
 
 
 </style>
