@@ -1,0 +1,57 @@
+.wrapper{
+    display: inline-block;
+    position: relative;
+    margin: 40px;
+    transition: all 1s;
+    transform-style: preserve-3d;
+
+}
+.card{
+    display: inline-block;
+    height: 270px;
+    width: 150px;
+    padding:0;
+    margin:0 -1em;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: absolute;
+    left: 0px;
+    transform-style: preserve-3d;
+    z-index : 1;
+}
+.card_outer{
+    transform: rotateY(180deg);
+    position: absolute;
+    background: #282828;
+
+}
+.wrapper .card:not(.reverse):hover {
+    transform: translateY(-20px);
+    padding-right: 50px;
+    transition: 0.4s ease-out;
+}
+
+
+.wrapper .card.reverse:hover {
+    transform: scaleY(-1) scaleX(-1) translateY(20px);
+    padding-right: 50px;
+    transition: 0.4s ease-out;
+}
+.reverse{
+    transform: scaleY(-1) scaleX(-1);
+}
+
+.wrapper :hover{
+    transform: rotateY(180deg);
+}
+#cards_00_theFools{
+    background-image: url("theFools.jpeg");
+}
+#cards_01_theMagician{
+    background-image: url("theMagician.jpg");
+}
+#cards_02_theEmpress{
+    background-image: url("theEmpress.jpg");
+}

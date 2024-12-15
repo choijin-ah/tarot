@@ -1,23 +1,15 @@
 
 
 <template>
-  <span id="CardNum" class="card" :class="{'reverse': currentData === cardR}" >
-    곰
-   </span>
+    <span class="wrapper">
+      <span id="cards_00_theFools" class="card" :class="{'reverse': currentData === cardR}" >
+       </span>
+      <span class="card_outer"></span>
+    </span>
 </template>
 
 <style scoped>
-  #CardNum{
-    display: inline-block;
-    height: 200px;
-    width: 150px;
-    background: linear-gradient(45deg, Violet, Orange);
-    font-size: 38px;
-  }
-  .reverse{
-    transform: scaleY(-1) scaleX(-1);
 
-  }
 </style>
 
 <script>

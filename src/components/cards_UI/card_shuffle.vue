@@ -1,12 +1,13 @@
 <script setup>
-import CardTemplate from '@/components/cards_UI/cards/CardTemplate.vue'
-import CardTemplate2 from '@/components/cards_UI/cards/CardTemplate2.vue'
-import CardTemplate3 from '@/components/cards_UI/cards/CardTemplate3.vue'
-
+import CardTemplate from '@/components/cards_UI/cards/cards_00_theFools.vue'
+import CardTemplate2 from '@/components/cards_UI/cards/cards_01_theMagician.vue'
+import CardTemplate3 from '@/components/cards_UI/cards/cards_02_theEmpress.vue'
+import '@/assets/cards/cards_style.css'
 
 </script>
 
 <template>
+
   <div class="background">
       <CardTemplate />
       <CardTemplate2 />
